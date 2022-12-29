@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <meta charset="utf-8" />
         <title>Cargo App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +8,24 @@
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
 
-        <!-- Plugins css -->
-        <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/libs/selectize/css/selectize.bootstrap3.css" rel="stylesheet" type="text/css" />
-        
-        <!-- App css -->
-        <link href="assets/css/bootstrap-modern.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
-        <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+        <!-- third party css -->
+        <link href="./assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/libs/datatables.net-select-bs4/css//select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
 
-        <link href="assets/css/bootstrap-modern-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
-        <link href="assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+		<!-- App css -->
+		<link href="./assets/css/bootstrap-modern.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+		<link href="./assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
 
-        <!-- icons -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/bootstrap-modern-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+		<link href="./assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+
+		<!-- icons -->
+		<link href="./assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -576,425 +578,68 @@
                             <div class="col-12">
                                 <div class="page-title-box">
                                     <div class="page-title-right">
-                                        <form class="form-inline">
-                                            <div class="form-group">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="text" class="form-control border-0 shadow" id="dash-daterange">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text bg-blue border-blue text-white">
-                                                            <i class="mdi mdi-calendar-range"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="javascript: void(0);" class="btn btn-blue btn-sm ml-2">
-                                                <i class="mdi mdi-autorenew"></i>
-                                            </a>
-                                            <a href="javascript: void(0);" class="btn btn-blue btn-sm ml-1">
-                                                <i class="mdi mdi-filter-variant"></i>
-                                            </a>
-                                        </form>
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                                            <li class="breadcrumb-item active">Datatables</li>
+                                        </ol>
                                     </div>
-                                    <h4 class="page-title">Dashboard</h4>
+                                    <h4 class="page-title">SMU</h4>
                                 </div>
                             </div>
                         </div>     
                         <!-- end page title --> 
 
                         <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
 
-                            <div class="col-md-6 col-xl-3">
-                                <div class="widget-rounded-circle card-box">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="avatar-lg rounded-circle bg-soft-pink border-pink border">
-                                                <i class="fe-bar-chart-line- font-22 avatar-title text-pink"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-right">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">234</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Total SMU</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div> <!-- end widget-rounded-circle-->
-                            </div> <!-- end col-->
-
-                            <div class="col-md-6 col-xl-3">
-                                <div class="widget-rounded-circle card-box">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="avatar-lg rounded-circle bg-soft-blue border-blue border">
-                                                <i class="fe-bar-chart-line- font-22 avatar-title text-blue"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-right">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">35</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Total Airports</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div> <!-- end widget-rounded-circle-->
-                            </div> <!-- end col-->
-
-                            <div class="col-md-6 col-xl-3">
-                                <div class="widget-rounded-circle card-box">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="avatar-lg rounded-circle bg-soft-success border-success border">
-                                                <i class="fe-bar-chart-line- font-22 avatar-title text-success"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-right">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">43</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Total Clients</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div> <!-- end widget-rounded-circle-->
-                            </div> <!-- end col-->
-
-                            <div class="col-md-6 col-xl-3">
-                                <div class="widget-rounded-circle card-box">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="avatar-lg rounded-circle bg-soft-warning border-warning border">
-                                                <i class="fe-bar-chart-line- font-22 avatar-title text-warning"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-right">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">8</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Total Users</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div> <!-- end widget-rounded-circle-->
-                            </div> <!-- end col-->
+                                        <table id="datatable-buttons" class="table table-striped dt-responsive nowrap w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th>Number</th>
+                                                    <th>Departure</th>
+                                                    <th>Destination</th>
+                                                    <th>Client</th>
+                                                    <th>Total Cost</th>
+                                                    <th>Status</th>
+                                                    <th class="text-center">Action</th>
+                                                </tr>
+                                            </thead>
+                                        
+                                        
+                                            <tbody>
+                                                <tr>
+                                                    <td>0000012</td>
+                                                    <td>
+                                                        <div>Sentani</div>
+                                                        <small class="bg-secondary text-light rounded px-1">DJJ</small>
+                                                    </td>
+                                                    <td>
+                                                        <div>Rendani</div>
+                                                        <small class="bg-secondary text-light rounded px-1">MKW</small>
+                                                    </td>
+                                                    <td>PT. Sinlie Prekasa</td>
+                                                    <td>Rp 1.300.000</td>
+                                                    <td>
+                                                        <i class="fas fa-circle text-success"></i>
+                                                        <small class="text-success">Active</small>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="btn btn-sm btn-dark"> <i class="fas fa-eye"></i> </a>
+                                                        <a href="#" class="btn btn-sm btn-outline-dark"> <i class="fas fa-edit"></i> </a>
+                                                        <a href="#" class="btn btn-sm btn-outline-danger"> <i class="fas fa-trash"></i> </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                    </div> <!-- end card body-->
+                                </div> <!-- end card -->
+                            </div><!-- end col-->
                         </div>
                         <!-- end row-->
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card-box">
-                                    <div class="dropdown float-right">
-                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-0">Total Revenue</h4>
-
-                                    <div class="widget-chart text-center" dir="ltr">
-                                        
-                                        <div id="total-revenue" class="mt-0"  data-colors="#5671f0"></div>
-
-                                        <h5 class="text-muted mt-0">Total sales made today</h5>
-                                        <h2>$178</h2>
-
-                                        <p class="text-muted w-75 mx-auto sp-line-2">Traditional heading elements are designed to work best in the meat of your page content.</p>
-
-                                        <div class="row mt-3">
-                                            <div class="col-4">
-                                                <p class="text-muted font-15 mb-1 text-truncate">Target</p>
-                                                <h4><i class="fe-arrow-down text-danger mr-1"></i>$7.8k</h4>
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="text-muted font-15 mb-1 text-truncate">Last week</p>
-                                                <h4><i class="fe-arrow-up text-success mr-1"></i>$1.4k</h4>
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="text-muted font-15 mb-1 text-truncate">Last Month</p>
-                                                <h4><i class="fe-arrow-down text-danger mr-1"></i>$15k</h4>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div> <!-- end card-box -->
-                            </div> <!-- end col-->
-
-                            <div class="col-lg-8">
-                                <div class="card-box pb-2">
-                                    <div class="float-right d-none d-md-inline-block">
-                                        <div class="btn-group mb-2">
-                                            <button type="button" class="btn btn-xs btn-light">Today</button>
-                                            <button type="button" class="btn btn-xs btn-light">Weekly</button>
-                                            <button type="button" class="btn btn-xs btn-secondary">Monthly</button>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-3">SMU Analytics</h4>
-
-                                    <div dir="ltr">
-                                        <div id="sales-analytics" class="mt-4" data-colors="#43bfe5,#6c757d"></div>
-                                    </div>
-                                </div> <!-- end card-box -->
-                            </div> <!-- end col-->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card-box">
-                                    <div class="dropdown float-right">
-                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-3">User Log</h4>
-
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless table-hover table-nowrap table-centered m-0">
-
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th colspan="2" class="font-weight-medium">User</th>
-                                                    <th class="font-weight-medium">Login</th>
-                                                    <th class="font-weight-medium">Estimation</th>
-                                                    <th class="font-weight-medium">Transaction</th>
-                                                    <th class="font-weight-medium">Opsi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-    
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">Janzen Michael</h5>
-                                                        <p class="mb-0 text-muted"><small>Admin</small></p>
-                                                    </td>
-    
-                                                    <td>
-                                                        <i class="mdi mdi-clock text-primary"></i> 08:00
-                                                    </td>
-    
-                                                    <td>
-                                                        <i class="mdi mdi-timer-sand text-primary"></i> 5 jam
-                                                    </td>
-    
-                                                    <td>
-                                                        11 transaksi
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-chat"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-12.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-    
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">Heavenly Joice</h5>
-                                                        <p class="mb-0 text-muted"><small>Admin</small></p>
-                                                    </td>
-    
-                                                    <td>
-                                                        <i class="mdi mdi-clock text-primary"></i> 11:00
-                                                    </td>
-    
-                                                    <td>
-                                                        <i class="mdi mdi-timer-sand text-primary"></i> 5 jam
-                                                    </td>
-    
-                                                    <td>
-                                                        11 transaksi
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-chat"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-
-                            <div class="col-xl-6">
-                                <div class="card-box">
-                                    <div class="dropdown float-right">
-                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-3">SMU Printed History</h4>
-
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless table-nowrap table-hover table-centered m-0">
-
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th class="font-weight-medium">Number</th>
-                                                    <th class="font-weight-medium">Departure</th>
-                                                    <th class="font-weight-medium">Destination</th>
-                                                    <th class="font-weight-medium">Status</th>
-                                                    <th class="font-weight-medium">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">000000000012</h5>
-                                                    </td>
-    
-                                                    <td>
-                                                        DJJ
-                                                    </td>
-    
-                                                    <td>
-                                                        JWD
-                                                    </td>
-    
-                                                    <td>
-                                                        <span class="badge bg-soft-success text-success">Paid</span>
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">000000000011</h5>
-                                                    </td>
-    
-                                                    <td>
-                                                        DJJ
-                                                    </td>
-    
-                                                    <td>
-                                                        JWD
-                                                    </td>
-    
-                                                    <td>
-                                                        <span class="badge bg-soft-danger text-danger">Unpaid</span>
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">000000000011</h5>
-                                                    </td>
-    
-                                                    <td>
-                                                        DJJ
-                                                    </td>
-    
-                                                    <td>
-                                                        JWD
-                                                    </td>
-    
-                                                    <td>
-                                                        <span class="badge bg-soft-success text-success">Paid</span>
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">000000000010</h5>
-                                                    </td>
-    
-                                                    <td>
-                                                        DJJ
-                                                    </td>
-    
-                                                    <td>
-                                                        JWD
-                                                    </td>
-    
-                                                    <td>
-                                                        <span class="badge bg-soft-warning text-warning">Pending</span>
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 font-weight-normal">000000000011</h5>
-                                                    </td>
-    
-                                                    <td>
-                                                        DJJ
-                                                    </td>
-    
-                                                    <td>
-                                                        JWD
-                                                    </td>
-    
-                                                    <td>
-                                                        <span class="badge bg-soft-success text-success">Paid</span>
-                                                    </td>
-    
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-eye"></i></a>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div> <!-- end .table-responsive-->
-                                </div> <!-- end card-box-->
-                            </div> <!-- end col -->
-                        </div>
-                        <!-- end row -->
                         
                     </div> <!-- container -->
 
@@ -1092,7 +737,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-10.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-10.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1107,7 +752,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-1.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-1.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status away"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1122,7 +767,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-9.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-9.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status busy"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1141,7 +786,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-2.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1156,7 +801,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-4.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-4.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status away"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1171,7 +816,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-5.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1186,7 +831,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-12.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1201,7 +846,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-7.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-7.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status busy"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1216,7 +861,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="media">
                                     <div class="position-relative mr-2">
-                                        <img src="assets/images/users/user-8.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="./assets/images/users/user-8.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status away"></i>
                                     </div>
                                     <div class="media-body overflow-hidden">
@@ -1428,19 +1073,29 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
-        <script src="assets/js/vendor.min.js"></script>
+        <script src="./assets/js/vendor.min.js"></script>
 
-        <!-- Plugins js-->
-        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <!-- third party js -->
+        <script src="./assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="./assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="./assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="./assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+        <script src="./assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="./assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="./assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="./assets/libs/datatables.net-buttons/js/buttons.flash.min.js"></script>
+        <script src="./assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="./assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+        <script src="./assets/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+        <script src="./assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="./assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <!-- third party js ends -->
 
-        <script src="assets/libs/selectize/js/standalone/selectize.min.js"></script>
+        <!-- Datatables init -->
+        <script src="./assets/js/pages/datatables.init.js"></script>
 
-        <!-- Dashboar 1 init js-->
-        <script src="assets/js/pages/dashboard-1.init.js"></script>
-
-        <!-- App js-->
-        <script src="assets/js/app.min.js"></script>
+        <!-- App js -->
+        <script src="./assets/js/app.min.js"></script>
         
     </body>
 </html>
