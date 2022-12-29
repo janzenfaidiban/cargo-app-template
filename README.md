@@ -1,2 +1,3 @@
-# cargo-app-template
-Template for cargo web app
+# Template for cargo web app
+
+See demo here https://janzenfaidiban.github.io/cargo-app-template/
